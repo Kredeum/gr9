@@ -1,0 +1,9 @@
+node_modules
+cache
+artifacts
+solidity/abis
+
+**/*.env
+**/*.map
+
+.DS_Store
