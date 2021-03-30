@@ -12,8 +12,10 @@ Kredeum NFTs Projet - WordPress pluging and Polygon Smart Contract enabling :
 
 Download [Kredeum NFTs WP plugin](https://github.com/Kredeum/gr9/releases/download/v0.2.8/KredeumNFTs.zip)
 
-Deployed [Kredeum NFTs Smart Contract on Polygon](https://explorer-mainnet.maticvigil.com/address/0x792f8e3C36Ac3c1C6D62ECc44a88cA1317fEce93/transactions)
+Deployed [Kredeum NFTs Smart Contract on Polygon](https://explorer-mainnet.maticvigil.com/address/0xF6d53C7e96696391Bb8e73bE75629B37439938AF/transactions)
 
-Explore [Kredeum NFTs on Opensea](https://opensea.io/collection/kredeum-nft)
+Explore [Kredeum NFTs](https://kre.kredeum.tech)
+
+Exchange [Kredeum NFTs on Opensea](https://opensea.io/collection/kredeum-nfts)
 
 Discover [Kredeum NFTs indexed via The Graph](https://thegraph.com/explorer/subgraph/zapaz/kredeum-nft)
