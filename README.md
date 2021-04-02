@@ -12,7 +12,7 @@ Kredeum NFTs Projet - WordPress pluging and Polygon Smart Contract enabling :
 
 Watch [Kredeum NFTs presentation on YouTube](https://www.youtube.com/watch?v=PWYbeLTXTKE)
 
-Download [Kredeum NFTs WP plugin](https://github.com/Kredeum/gr9/releases/download/v0.2.8/KredeumNFTs.zip)
+Download [Kredeum NFTs WP plugin](https://github.com/Kredeum/gr9/releases/download/v0.2.11/KredeumNFTs_v0.2.11.zip)
 
 Verify [Kredeum NFTs Smart Contract on Polygon](https://explorer-mainnet.maticvigil.com/address/0xF6d53C7e96696391Bb8e73bE75629B37439938AF/transactions)
 
