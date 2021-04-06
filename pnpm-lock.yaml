@@ -4,6 +4,7 @@ devDependencies:
   '@nomiclabs/hardhat-etherscan': 2.1.1_hardhat@2.1.2
   '@nomiclabs/hardhat-waffle': 2.0.1_17865985fda3573396a4b95c34b01575
   '@openzeppelin/contracts': 3.4.1
+  '@poanet/solidity-flattener': 3.0.6
   ethereum-waffle: 3.3.0
   ethers: 5.0.32
   hardhat: 2.1.2
@@ -474,6 +475,18 @@ packages:
     dev: true
     resolution:
       integrity: sha512-cUriqMauq1ylzP2TxePNdPqkwI7Le3Annh4K9rrpvKfSBB/bdW+Iu1ihBaTIABTAAJ85LmKL5SSPPL9ry8d1gQ==
+  /@poanet/solidity-flattener/3.0.6:
+    dependencies:
+      bunyan: 1.8.15
+      decomment: 0.9.4
+      glob-promise: 3.4.0
+      path: 0.12.7
+    dev: true
+    engines:
+      node: ^12
+    hasBin: true
+    resolution:
+      integrity: sha512-BCeBZ6DRNfvPWUapRfhVua8zGeeMA1saYceQJDa2izPqTUfJMMaQHNrnyQ3tqgy+0nSeyRwYaSoEsRkQGa+new==
   /@resolver-engine/core/0.3.3:
     dependencies:
       debug: 3.2.7
@@ -627,10 +640,21 @@ packages:
     dev: true
     resolution:
       integrity: sha512-rYff6FI+ZTKAPkJUoyz7Udq3GaoDZnxYDEvdEdFZASiA7PoErltHezDishqQiSDWrGxvxmplH304jyzQmjp0AQ==
+  /@types/glob/7.1.3:
+    dependencies:
+      '@types/minimatch': 3.0.4
+      '@types/node': 14.14.37
+    dev: true
+    resolution:
+      integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==
   /@types/lru-cache/5.1.0:
     dev: true
     resolution:
       integrity: sha512-RaE0B+14ToE4l6UqdarKPnXwVDuigfFv+5j9Dze/Nqr23yyuqdNvzcZi3xB+3Agvi5R4EOgAksfv3lXX4vBt9w==
+  /@types/minimatch/3.0.4:
+    dev: true
+    resolution:
+      integrity: sha512-1z8k4wzFnNjVK/tlxvrWuK5WMt6mydWWP7+zvH5eFep4oj+UkrfiJTRtjCeBXNpwaA/FYqqtb4/QS4ianFpIRA==
   /@types/mkdirp/0.5.2:
     dependencies:
       '@types/node': 14.14.37
@@ -1687,6 +1711,18 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-yEYTwGndELGvfXsImMBLop58eaGW+YdONi1fNjTINSY98tmMmFijBG6WXgdkfuLNt4imzQNtIE+eBp1PVpMCSw==
+  /bunyan/1.8.15:
+    dev: true
+    engines:
+      '0': node >=0.10.0
+    hasBin: true
+    optionalDependencies:
+      dtrace-provider: 0.8.8
+      moment: 2.29.1
+      mv: 2.1.1
+      safe-json-stringify: 1.2.0
+    resolution:
+      integrity: sha512-0tECWShh6wUysgucJcBAoYegf3JJoZWibxdqhTm7OHPeT42qdjkZ29QCMcKwbgU1kiH+auSIasNRXMLWXafXig==
   /bytes/3.1.0:
     dev: true
     engines:
@@ -2193,6 +2229,15 @@ packages:
       node: '>=0.10'
     resolution:
       integrity: sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  /decomment/0.9.4:
+    dependencies:
+      esprima: 4.0.1
+    dev: true
+    engines:
+      node: '>=6.4'
+      npm: '>=2.15'
+    resolution:
+      integrity: sha512-8eNlhyI5cSU4UbBlrtagWpR03dqXcE5IR9zpe7PnO6UzReXDskucsD8usgrzUmQ6qJ3N82aws/p/mu/jqbURWw==
   /decompress-response/3.3.0:
     dependencies:
       mimic-response: 1.0.1
@@ -2328,6 +2373,16 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-UGGGWfSauusaVJC+8fgV+NVvBXkCTmVv7sk6nojDZZvuOUNGUy0Zk4UpHQD6EDjS0jpBwcACvH4eofvyzBcRDw==
+  /dtrace-provider/0.8.8:
+    dependencies:
+      nan: 2.14.2
+    dev: true
+    engines:
+      node: '>=0.10'
+    optional: true
+    requiresBuild: true
+    resolution:
+      integrity: sha512-b7Z7cNtHPhH9EJhNNbbeqTcXB8LGFFZhq1PGgEvpeHlzd36bhbdTWoE/Ba/YguqpBSlAPKnARWhVlhunCMwfxg==
   /duplexer3/0.1.4:
     dev: true
     optional: true
@@ -3401,6 +3456,27 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
+  /glob-promise/3.4.0:
+    dependencies:
+      '@types/glob': 7.1.3
+    dev: true
+    engines:
+      node: '>=4'
+    peerDependencies:
+      glob: '*'
+    resolution:
+      integrity: sha512-q08RJ6O+eJn+dVanerAndJwIcumgbDdYiUT7zFQl3Wm1xD6fBKtah7H8ZJChj4wP+8C+QfeVy8xautR7rdmKEw==
+  /glob/6.0.4:
+    dependencies:
+      inflight: 1.0.6
+      inherits: 2.0.4
+      minimatch: 3.0.4
+      once: 1.4.0
+      path-is-absolute: 1.0.1
+    dev: true
+    optional: true
+    resolution:
+      integrity: sha1-DwiGD2oVUSey+t1PnOJLGqtuTSI=
   /glob/7.1.3:
     dependencies:
       fs.realpath: 1.0.0
@@ -3803,7 +3879,6 @@ packages:
       integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=
   /inherits/2.0.3:
     dev: true
-    optional: true
     resolution:
       integrity: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
   /inherits/2.0.4:
@@ -4875,6 +4950,11 @@ packages:
     optional: true
     resolution:
       integrity: sha512-DD0vOdofJdoaRNtnWcrXe6RQbpHkPPmtqGq14uRX0F8ZKJ5nv89CVTYl/BZdppDxBDaV0hl75htg3abpEWlPZA==
+  /moment/2.29.1:
+    dev: true
+    optional: true
+    resolution:
+      integrity: sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
   /ms/2.0.0:
     dev: true
     resolution:
@@ -4932,6 +5012,22 @@ packages:
     optional: true
     resolution:
       integrity: sha512-uVSvmeCWf36pU2nB4/1kzYZjsXD9vofZKpgudqkceYY5g2aZZXJ5r9lxuzoRLl1OAp28XljXsEJ/X/85ZsKmKw==
+  /mv/2.1.1:
+    dependencies:
+      mkdirp: 0.5.5
+      ncp: 2.0.0
+      rimraf: 2.4.5
+    dev: true
+    engines:
+      node: '>=0.8.0'
+    optional: true
+    resolution:
+      integrity: sha1-rmzg1vbV4KT32JN5jQPB6pVZtqI=
+  /nan/2.14.2:
+    dev: true
+    optional: true
+    resolution:
+      integrity: sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
   /nano-json-stream-parser/0.1.2:
     dev: true
     optional: true
@@ -4955,6 +5051,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA==
+  /ncp/2.0.0:
+    dev: true
+    hasBin: true
+    optional: true
+    resolution:
+      integrity: sha1-GVoh1sRuNh0vsSgbo4uR6d9727M=
   /negotiator/0.6.2:
     dev: true
     engines:
@@ -5399,6 +5501,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-WcRPfuSR2nBNpBXaWkBwuk+P5EE=
+  /path/0.12.7:
+    dependencies:
+      process: 0.11.10
+      util: 0.10.4
+    dev: true
+    resolution:
+      integrity: sha1-1NwqUGxM4hl+tIHr/NWzbAFAsQ8=
   /pbkdf2/3.1.1:
     dependencies:
       create-hash: 1.2.0
@@ -5914,6 +6023,14 @@ packages:
       node: '>=0.12'
     resolution:
       integrity: sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==
+  /rimraf/2.4.5:
+    dependencies:
+      glob: 6.0.4
+    dev: true
+    hasBin: true
+    optional: true
+    resolution:
+      integrity: sha1-7nEM5dk6j9uFb7Xqj/Di11k0sto=
   /rimraf/2.7.1:
     dependencies:
       glob: 7.1.6
@@ -5954,6 +6071,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-e1wFe99A91XYYxoQbcq2ZJUWurxEyP8vfz7A7vuUe1s95q8r5ebraVaA1BukYJcpM6V16ugWoD9vngi8Ccu5fg==
+  /safe-json-stringify/1.2.0:
+    dev: true
+    optional: true
+    resolution:
+      integrity: sha512-gH8eh2nZudPQO6TytOvbxnuhYBOvDBBLW52tz5q6X58lJcd/tkmqFR+5Z9adS8aJtURSXWThWy/xJtJwixErvg==
   /safe-regex/1.1.0:
     dependencies:
       ret: 0.1.15
@@ -6926,6 +7048,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-/s3UsZUrIfa6xDhr7zZhnE9SLQ5RIXyYfiVnMMyMDzOc8WhWN4Nbh36H842OyurKbCDAesZOJaVyvmSl6fhGQw==
+  /util/0.10.4:
+    dependencies:
+      inherits: 2.0.3
+    dev: true
+    resolution:
+      integrity: sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==
   /utils-merge/1.0.1:
     dev: true
     engines:
@@ -7555,6 +7683,7 @@ specifiers:
   '@nomiclabs/hardhat-etherscan': ^2.1.1
   '@nomiclabs/hardhat-waffle': ^2.0.1
   '@openzeppelin/contracts': ^3.4.1
+  '@poanet/solidity-flattener': ^3.0.6
   ethereum-waffle: ^3.3.0
   ethers: ^5.0.32
   hardhat: ^2.1.2
