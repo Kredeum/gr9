@@ -10,6 +10,8 @@ Kredeum NFTs Projet - WordPress pluging and Polygon Smart Contract enabling :
 
 3/ selling these minted NFTs on OpenSea
 
+**Read [Kredeum NFTs documentation, installation and user guide](https://docs.kredeum.tech/)**
+
 Watch [Kredeum NFTs presentation on YouTube](https://www.youtube.com/watch?v=PWYbeLTXTKE)
 
 Download [Kredeum NFTs WP plugin](https://github.com/Kredeum/gr9/releases/download/v0.2.11/KredeumNFTs_v0.2.11.zip)
