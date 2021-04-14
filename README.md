@@ -12,7 +12,7 @@ Kredeum NFTs Projet - WordPress pluging and Polygon Smart Contract enabling :
 
 **Read [Kredeum NFTs documentation, installation and user guide](https://docs.kredeum.tech/)**
 
-**Join and / or contact us on Discord https://discord.gg/6MbErhxs**
+**Join us on Discord https://discord.gg/6MbErhxs / Send us an email contact@kredeum.com**
 
 Watch [Kredeum NFTs presentation on YouTube](https://www.youtube.com/watch?v=PWYbeLTXTKE)
 
