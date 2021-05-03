@@ -4,7 +4,9 @@
 
 ## Grants Round 9 Hackathon, March 2021 
 
-## _[1st Prize won with Polygon](https://twitter.com/0xPolygon/status/1382268280933535748)_
+## _[1st Prize with Polygon](https://twitter.com/0xPolygon/status/1382268280933535748)_
+
+## _[IPFS Prize "Framework Support" with Protocal Labs](https://gitcoin.co/issue/protocol/grants/6/100025063)_
 
 <hr />
 
